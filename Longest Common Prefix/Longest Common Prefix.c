@@ -7,7 +7,7 @@ char * longestCommonPrefix(char ** strs, int strsSize){
     strcpy(buff,strs[0]);					  // !!! Initialize buffer with first word in the list.
     for(int i=1; i<strsSize; i++){	
         if(strs[i][0] != buff[0]) return "";  // !!! If first characters are not the same, then return NULL;
-        for(int j=1; j<strlen(buff); j++){    // !!! Other way, check letter by letter upto current buffer lenght.
+        for(int j=1; buff[j]!='\0'; j++){    // !!! Other way, check letter by letter upto current buffer lenght.
             if(strs[i][j] != buff[j]){        // !!! If they're not the same, update buffer(put '\0' in that index) and break for next element.
                 buff[j] = '\0';
                 break;

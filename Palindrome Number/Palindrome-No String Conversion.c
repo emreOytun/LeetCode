@@ -15,7 +15,7 @@ bool isPalindrome(int x) {
 
 
 
-bool isPalindrome(int x) {			// Bir bastan bir sondan rakamlari alarak kontrol etme ( Islem yuku fazla)
+bool isPalindrome2(int x) {			// Bir bastan bir sondan rakamlari alarak kontrol etme ( Islem yuku fazla)
         if(x==0) return true;	    // Sayi 0 ise log0 = negatif bir sayi olacagi icin dikkat et!!!!
 		int logX = log10(x);
 		if(logX<0) return false;  //Sayi negatif mi kontrol et.
